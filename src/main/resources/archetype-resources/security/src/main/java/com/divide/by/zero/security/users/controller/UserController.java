@@ -24,13 +24,13 @@ public class UserController {
     @PreAuthorize(value = "hasRole('ROLE_ADMIN')")
     @GetMapping("")
     public List<User> getUsers() {
-        return userService.GetAllUsers();
+        return userService.getAllUsers();
     }
 
     @PreAuthorize(value = "hasRole('ROLE_ADMIN')")
     @PostMapping("")
     public User addUser(@RequestBody final UserRequest user) {
-        return userService.AddUser(user);
+        return userService.addUser(user);
     }
 
 }

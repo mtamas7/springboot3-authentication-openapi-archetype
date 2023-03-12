@@ -28,6 +28,7 @@
         <jackson-databind-nullable.version>0.2.4</jackson-databind-nullable.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
         <org.mapstruct.version>1.5.3.Final</org.mapstruct.version>
+        <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
         <swagger-codegen-version>6.2.0</swagger-codegen-version>
         <springfox-version>3.0.0</springfox-version>
     </properties>
@@ -95,6 +96,11 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${springfox-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${org.mapstruct.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

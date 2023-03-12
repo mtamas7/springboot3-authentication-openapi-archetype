@@ -7,7 +7,7 @@ import com.divide.by.zero.security.users.requests.UserRequest;
 import java.util.List;
 
 public interface UserService {
-    public List<User> GetAllUsers();
+    public List<User> getAllUsers();
 
-    public User AddUser(UserRequest user);
+    public User addUser(UserRequest user);
 }

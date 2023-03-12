@@ -14,11 +14,11 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
-    public List<User> GetAllUsers() {
+    public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
-    public User AddUser(final UserRequest user) {
+    public User addUser(final UserRequest user) {
         final User newUser = new User();
         newUser.setFirst_name(user.getFirst_name());
         newUser.setLast_name(user.getLast_name());
